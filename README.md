@@ -54,6 +54,7 @@ if __name__ == "__main__":
     menu()
 
 
+
 ## Menú de Opciones
 1. Generar representación en byte de un carácter.
 2. Generar representación en byte de una palabra.
