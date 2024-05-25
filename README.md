@@ -6,21 +6,22 @@ usé el git clone para clonar el repositorio y despues el cd Herramientas-finalh
 Este proyecto permite convertir caracteres y palabras a su representación en byte y viceversa, utilizando un menú interactivo.
 
 ##Codigo
-def char_to_byte(character):
-    """Genera la representación en byte de un carácter."""
+
+    def char_to_byte(character):
+   
     return format(ord(character), '08b')
 
-def word_to_bytes(word):
-    """Genera la representación en byte de una palabra."""
+    def word_to_bytes(word):
+    
     return ' '.join(format(ord(char), '08b') for char in word)
 
-def byte_to_ascii(byte_str):
-    """Genera la representación ASCII de un byte."""
+    def byte_to_ascii(byte_str):
+    
     ascii_char = chr(int(byte_str, 2))
     return f"{ascii_char}-{ord(ascii_char)}"
 
-def menu():
-    """Menú de opciones para el usuario."""
+    def menu():
+
     while True:
         print("\nMenu:")
         print("1. Generar representación en byte de un carácter")
@@ -50,7 +51,7 @@ def menu():
         else:
             print("Opción no válida, intente de nuevo.")
             
-if __name__ == "__main__":
+    if __name__ == "__main__":
     menu()
 
 
